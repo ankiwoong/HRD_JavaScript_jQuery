@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> 전역변수 </title>
+</head>
+
+<body>
+	<script>
+		// 함수 정의
+		function test() {
+			age = 43;		// 전역 변수
+		}
+
+		// 변수 선언
+		var age = 11;		// 전역 변수
+		
+		// 함수 호출
+		test();
+		document.write(age + "<br>");
+		document.write("프로그램 완료");
+	</script>
+
+</body>
+
+</html>
