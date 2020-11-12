@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>if 문 - 04</title>
+    <style>
+        body {
+            background: #c5c3c4 url(./images/bg13.jpg) no-repeat center center;
+        }
+
+        span {
+            color: blue;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // Date() - 현재 내가 쓰고 있는 컴퓨터의 날짜와 시간을 생성
+        var today = new Date(); // "Thu Nov 12 2020 20:34:09 GMT+0900 (대한민국 표준시)"
+        var current = today.getHours(); // 20
+
+        /*
+        년 : year / 월 : month / 일 : day / 시 : hour / 분 : minute / 초 : second
+        */
+
+        document.write("현재 시간은 <span>" + today.toLocaleString() + "</span>입니다." + "<br />" + "<br />");
+
+        if (current > 7 && current < 12) { // 논리곱 and ... 8, 9, 10, 11 
+            document.write("<h1>Good Morning! 좋은 아침입니다.</h1>")
+        } else if (current >= 12 && current < 14) { // 12, 13
+            document.write("<h1>점심은 드셨어요?</h1>");
+        } else if (current >= 14 && current < 18) { // 14, 15, 16, 17
+            document.write("<h1>나른한 오후지만 커피 한잔과 함께 파이팅~</h1>");
+        } else { // 18 ~ 24
+            document.write("<h1>편한 시간 되세요</h1>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>if 문 - 09</title>
+</head>
+
+<body>
+    <script>
+        /*
+        0점 ~ 100점 사이의 점수를 입력받아 등급을 매기시오
+        90 ~ 100 : A등급
+        80 ~ 89 : B등급
+        70 ~ 79 : C등급
+        60 ~ 69 : D등급
+        0 ~ 59 : F등급
+        */
+        var point = Number(prompt("성적점수를 입력하세요"));
+
+        if (point >= 90) {
+            document.write("A등급");
+        } else if (point >= 80) {
+            document.write("B등급");
+        } else if (point >= 70) {
+            document.write("C등급");
+        } else if (point >= 60) {
+            document.write("D등급");
+        } else {
+            document.write("F등급");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>if 문 - 06</title>
+</head>
+
+<body>
+    <script>
+        var irum = prompt("아이디를 입력하세요");
+
+        // if (idName != "abcd") {
+        //     // alert("인증에 실패했습니다.")
+        //     document.write("인증에 실패했습니다.");
+        // } else {
+        //     var pwName = prompt("패스워드를 입력하세요");
+
+        //     if (pwName == "1234A") {
+        //         // alert("인증에 성공했습니다.")
+        //         document.write("인증에 성공했습니다.");
+        //     } else {
+        //         // alert("인증에 실패했습니다.")
+        //         document.write("인증에 실패했습니다.");
+        //     }
+        // }
+
+        if (irum == "abcd") {
+            var pass = prompt("비밀번호를 입력하세요");
+
+            if (pass == "123456") {
+                alert("인증에 성공했습니다.");
+            } else {
+                alert("인증에 실패했습니다.");
+            }
+        } else {
+            alert("인증에 실패했습니다.");
+        }
+    </script>
+</body>
+
+</html>
