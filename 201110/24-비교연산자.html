@@ -9,13 +9,13 @@
 <body>
 	<script>
 		// 아스키 코드 값에 의해서 참과 거짓을 나눈다
-		document.write('"korea" > "america" : ' + ("korea" > "america") + "<br>");
-		document.write('"Korea" > "america" : ' + ("Korea" > "america") + "<br>");
-		document.write('"한글" > "english" : ' + ("한글" > "english") + "<br>");
-		document.write('"15" > "12" : ' + ("15" > "12") + "<br>");
-		document.write('"015" > "12" : ' + ("015" > "12") + "<br>");
-		document.write('"9" > "12" : ' + ("9" > "12") + "<br>");
-		document.write('Number("9") > Number("12") : ' + (Number("9") > Number("12")) + "<br>");
+		document.write('"korea" > "america" : ' + ("korea" > "america") + "<br>");					// 107 > 97 = True
+		document.write('"Korea" > "america" : ' + ("Korea" > "america") + "<br>");					// 75 > 97 = False
+		document.write('"한글" > "english" : ' + ("한글" > "english") + "<br>");					// 128 ~ 256 > 101 = True
+		document.write('"15" > "12" : ' + ("15" > "12") + "<br>");									// 15 > 12 = True
+		document.write('"015" > "12" : ' + ("015" > "12") + "<br>");								// 48 > 49 = False
+		document.write('"9" > "12" : ' + ("9" > "12") + "<br>");									// 57 > 49 = True
+		document.write('Number("9") > Number("12") : ' + (Number("9") > Number("12")) + "<br>");	// 9 > 12 = False
 	</script>
 </body>
 

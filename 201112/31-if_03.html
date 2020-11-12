@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>if 문 - 03</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt("숫자 하나를 입력하세요");
+
+        // null값은 ESC키를 눌러 취소하거나 값을 입력하지 않고 cancle 버튼을 누른 경우
+        if (num == null) {
+            document.write("숫자를 입력해 주십시오.");
+        } else {
+            if (num > 0) {
+                document.write(num + "는 양수입니다.")
+            } else if (num < 0) {
+                document.write(num + "는 음수입니다.")
+            } else {
+                document.write("당신이 입력한 숫자는 틀림없이 0이거나 또는 문자값입니다.")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>if 문 - 02</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt("숫자 하나를 입력하세요");
+        // var str = "string";
+
+        // isNaN(Not a Number) 숫자가 아니면 참(True), 숫자이면 거짓(False)값을 전달
+        if (isNaN(num)) {
+            document.write(num + "는 문자이므로 F5를 눌러 숫자를 다시 입력하세요.");
+        } else if (num % 2 == 0) {
+            document.write(num + "는(은) 짝수입니다.");
+        } else {
+            document.write(num + "는(은) 홀수입니다.")
+        }
+    </script>
+</body>
+
+</html>
