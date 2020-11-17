@@ -16,18 +16,46 @@
         60 ~ 69 : D등급
         0 ~ 59 : F등급
         */
-        var point = Number(prompt("성적점수를 입력하세요"));
+        // var point = Number(prompt("성적점수를 입력하세요"));
 
-        if (point >= 90) {
-            document.write("A등급");
-        } else if (point >= 80) {
-            document.write("B등급");
-        } else if (point >= 70) {
-            document.write("C등급");
-        } else if (point >= 60) {
-            document.write("D등급");
+        // if (point >= 90) {
+        //     document.write("A등급");
+        // } else if (point >= 80) {
+        //     document.write("B등급");
+        // } else if (point >= 70) {
+        //     document.write("C등급");
+        // } else if (point >= 60) {
+        //     document.write("D등급");
+        // } else {
+        //     document.write("F등급");
+        // }
+
+        var str = prompt("당신의 점수를 입력하세요?(0~100)");
+
+        // if (str >= 90) {
+        //     document.write("A학점");
+        // } else if (str >= 80 && str < 90) { // str >= 80 && str <== 90
+        //     document.write("B학점");
+        // } else if (str >= 70 && str < 80) {
+        //     document.write("C학점");
+        // } else if (str >= 60 && str < 70) {
+        //     document.write("D학점");
+        // } else {
+        //     document.write("F학점");
+        // }
+
+        if (str >= 90 && str <= 100) {
+            document.write("A학점");
+        } else if (str >= 80 && str < 90) {
+            document.write("B학점");
+        } else if (str >= 70 && str < 80) {
+            document.write("C학점");
+        } else if (str >= 60 && str < 70) {
+            document.write("D학점");
+        } else if (str >= 0 && str < 60) {
+            document.write("F학점");
         } else {
-            document.write("F등급");
+            document.write("점수 입력이 틀렸습니다. F5를 눌러 다시 실행하세요.");
         }
     </script>
 </body>

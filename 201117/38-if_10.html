@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 문 - 10</title>
+</head>
+
+<body>
+    <hr>
+    <h1>다중 if문</h1>
+    <hr>
+
+    <script>
+        var grade;
+        var point = prompt("당신의 점수를 입력하세요?(0~100)");
+
+        if (point >= 90 && point <= 100) {
+            grade = "A학점";
+        } else if (point >= 80 && point < 90) {
+            grade = "B학점";
+        } else if (point >= 70 && point < 80) {
+            grade = "C학점";
+        } else if (point >= 60 && point < 70) {
+            grade = "D학점";
+        } else if (point >= 0 && point < 60) {
+            grade = "F학점";
+        } else {
+            grade = "처리할 수 없는 점수";
+            document.write("점수 입력이 틀렸습니다. F5를 눌러 다시 실행하세요. ");
+        }
+
+        document.write("당신의 점수는 " + point + "점이고, 등급은 " + grade + "입니다.");
+    </script>
+</body>
+
+</html>

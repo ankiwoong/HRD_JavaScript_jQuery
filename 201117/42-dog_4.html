@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지 이동하기 4</title>
+    <style>
+        #dog {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/dog1.png" alt="강아지 이미지" id="dog">
+
+    <script>
+        var posX = prompt("강아지가 움직일 X좌표 값을 입력해주세요.(0~900)");
+        if (posX < 0 || posX > 900) {
+            document.write("<h1>X좌표의 숫자 입력범위는 0~900까지 입니다.</h1>");
+        } else {
+            var posY = parseInt(prompt("강아지가 움직일 Y좌표 값을 입력해주세요.(0~900)"));
+            if (posY < 0 || posY > 900) {
+                document.write("<h1>Y좌표의 숫자 입력범위는 0~900까지 입니다.</h1>");
+            } else {    // left:300px ; top:500px;
+                document.getElementById("dog").style.left = posX + "px";
+                document.getElementById("dog").style.top = posY + "px";
+                document.write("강아지가 처음위치에서 왼쪽으로 " + posX + "px과 아래쪽으로 " + posY + "px 위치로 이동하였습니다.");
+            }
+        }
+    </script>
+</body>
+
+</html>
