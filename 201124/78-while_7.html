@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 7</title>
+    <style>
+        #red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var i = 9;
+        while (i >= 10) { // i에 값이 10보다 클때 까지 반복문 실행합니다.
+            if (i % 2 == 0) {   // i에 값을 2로 나눠서 나머지가 0인 경우 - 짝수
+                document.write("<span>" + i + "</span><br />");
+            } else {    // i에 값을 2로 나눠서 나머지가 0이 아닌 경우 - 홀수
+                document.write("<span id='red'>" + i + "</span><br />");
+            }
+            i--;  // i=i-1;
+        }
+    </script>
+</body>
+
+</html>

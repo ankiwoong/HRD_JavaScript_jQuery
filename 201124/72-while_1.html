@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 1</title>
+</head>
+
+<body>
+    <script>
+        /*
+            while(조건){
+                조건이 만족될때 까지 실행될 실행문;
+                반드시 조건을 충족시킬 수 있는 증감값을 써야함... 증감값이 없다면 무한루프에 걸림.
+            }
+        */
+        var sum = 0;   // 합계를 구할 변수
+        var i = 1;   //  1~100까지 증가할 변수
+        while (i <= 100) {
+            sum = sum + i;
+            i++;  // i = i + 1;
+        }
+        document.write("1~100까지의 합 = " + sum + "<br />");
+    </script>
+</body>
+
+</html>

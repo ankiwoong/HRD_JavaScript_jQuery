@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 2</title>
+</head>
+
+<body>
+    <script>
+        var size = 1024;
+        var upload = 0;
+        while (upload <= size) {
+            document.write(upload + "M 업로드중....<br />");
+            upload += 200; // upload = upload + 200;
+        }
+        document.write("업로드를 완료하였습니다");
+    </script>
+</body>
+
+</html>
