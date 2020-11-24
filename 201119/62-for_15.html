@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>구구단 - 2차원 배열</title>
+</head>
+
+<body>
+    <script>
+        var gugu = 0;
+        var sp = "&nbsp;&nbsp;&nbsp;";
+        for (var i = 2; i <= 9; i++) {
+            for (var j = 1; j <= 9; j++) {
+                gugu = i * j;
+                if (gugu < 10) {
+                    document.write(i + " × " + j + " = 0" + gugu + sp);
+                } else {
+                    document.write(i + " × " + j + " = " + gugu + sp);
+                }
+            }
+            document.write("<br />");
+        }
+    </script>
+</body>
+
+</html>
