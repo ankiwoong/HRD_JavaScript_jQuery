@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 입력 - 인자 전달시 실인수는 있고 형식인수가 없는 경우</title>
+</head>
+
+<body>
+    <script>
+        function total() {
+            var s = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                s += arguments[i];      // arguments : 가상의 배열
+            }
+            return s;
+        }
+
+        document.write(total(2, 5, 3) + "<br />");
+        document.write(total(1, 5, 8, 8, 12, 14) + "<br />");
+    </script>
+</body>
+
+</html>
