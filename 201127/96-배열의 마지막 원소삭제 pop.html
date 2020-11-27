@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         // pop : 배열 끝점의 원소를 배열에서 제거한다.
 
         var arr = ['a', 'b', 'c', 'd', 'e'];
@@ -16,6 +16,38 @@
         arr.pop();  // 인덱스 번호 0:a, 1:b, 2:c, 3:d, 4:e
         document.write("<hr>");
         document.write(arr);
+    </script> -->
+
+    <script>
+        var ar = [0, 1, 2, 3];
+        document.write("ar =" + ar + "<br />");
+        ar.push(100, 200);
+        document.write("ar =" + ar + "<br />");
+        ar.push(300);
+        document.write("ar =" + ar + "<br />");
+        ar.pop();
+        document.write("ar =" + ar + "<br />");
+        ar.pop(100, 200);
+        document.write("ar =" + ar + "<br />");
+
+        /*
+        ---결과---
+        ar =0,1,2,3
+        ar =0,1,2,3,100,200
+        ar =0,1,2,3,100,200,300
+        ar =0,1,2,3,100,200
+        ar =0,1,2,3,100
+        push, pop은 원래 LIFO(Last In First Out) 방식의 스택구조이다.
+        이 두 메서드를 이용하면 배열을 스택처럼 활용할 수 있으며
+        임시적인 값을 잠시 저장할 때 편리한다.
+
+        pop() : 한번에 한개씩...
+        pop('e', 'd') : 의미없음.
+        두개의 데이터를 지우려면
+        pop();
+        pop();
+        입력
+        */
     </script>
 </body>
 
