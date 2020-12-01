@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ar = ["태연", "유리", "윤아", "써니", "수영", "유리", "서현", "효연"];
+        document.write("ar = " + ar + "<br />");
+        // ar = 태연,유리,윤아,써니,수영,유리,서현,효연
+
+        var sunny = ar.indexOf("써니");
+        document.write("써니는 " + (sunny + 1) + "번째에 있다. <br />")
+        // 써니는 4번째에 있다.
+
+        var yuri = ar.indexOf("유리");
+        document.write("유리는 " + (yuri + 1) + "번째에 있다. <br />")
+        var yuri = ar.lastIndexOf("유리");
+        // document.write("유리는 " + (yuri + 1) + "번째에 있다. <br />")
+        document.write("유리는 뒤에서 " + (ar.length - yuri) + "번째에 있다. <br />")
+        // 유리는 2번째에 있다.
+        // 유리는 뒤에서 3번째에 있다.
+
+        var aa = prompt("검색하고자 하는 멤버이름을 쓰세요");
+        var who = ar.indexOf(aa);
+        // var who = ar.indexOf(prompt("검색하고자 하는 멤버이름을 쓰세요."));
+        // document.write(aa + "는(은) " + who + "번째에 있다. <br />");
+        if (who == -1) {
+            document.write(aa + "는(은) 소녀시대가 아니다. <br />");
+        } else {
+            document.write(aa + "는(은) " + (who + 1) + "번째에 있습니다. <br />");
+        }
+        // 블랙핑크는(은) 소녀시대가 아니다.
+        // 서현는(은) 7번째에 있습니다.
+    </script>
+    <!--
+        indexOf : 앞쪽에서부터 검색
+        lastIndexOf : 뒤쪽에서부터 검색
+        발견된 요소의 첨자를 리턴하며 발견되지 않을 경우 -1을 리턴한다.
+
+        결과
+        ar = 태연,유리,윤아,써니,수영,유리,서현,효연
+        써니는 4번째에 있다.
+        유리는 2번째에 있다.
+        유리는 뒤에서 3번째에 있다.
+        ㅇㅇ는(은) -1번째에 있다.
+        // ㅇㅇ는(은) 소녀시다가 아니다.
+        // ㅇㅇ는(은) ㅇ번째가 있다.
+    -->
+</body>
+
+</html>
