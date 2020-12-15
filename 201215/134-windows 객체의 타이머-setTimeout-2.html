@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM(Browser Object Model)-window의 타이머-setTimeout-2</title>
+</head>
+
+<body>
+    <img src="../images/choco.jpg" id="img1">
+    <script>
+        // setTimeout(함수명, 지연시간)
+        setTimeout("ChangeImg()", 2000);    /// 2 초 후 딱 한번만 changeIme 함수 호출
+        function changeIme() {
+            var img1 = document.getElementById("img1");
+            img1.src = "../images/heart_choco.jpg";
+        }
+    </script>
+</body>
+
+</html>

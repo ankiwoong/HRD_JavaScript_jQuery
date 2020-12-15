@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> window 객체의 타이머-setInterval 문제 </title>
+	<style>
+		#ans {
+			font: 30px 맑은고딕;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="ans">
+		아래 그림중 1초 단위로 무작위로 계속 나타나도록 만드시오.
+	</div>
+
+	<script>
+		var banner = new Array();
+
+		for (i = 0; i < 7; i++) {
+			banner[i] = "../images/pic" + (i + 1) + ".jpg";
+
+			document.write("<img src = '" + banner[i] + "' width='100'> ");
+		}
+
+		var n = Math.ceil(Math.random() * 7) - 1;
+
+		document.write("<center><h3>");
+		document.write("<hr><p><img src = '" + banner[n] + "'><br>");
+		document.write("</h3></center>");
+	</script>
+</body>
+
+</html>

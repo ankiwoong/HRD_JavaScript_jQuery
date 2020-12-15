@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> window 객체의 타이머-setInterval 문제 </title>
+	<style>
+		#ans {
+			font: 30px 맑은고딕;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="ans">
+		아래 그림중 1초 단위로 무작위로 계속 나타나도록 만드시오.
+	</div>
+
+	<script>
+		var banner = new Array();
+
+		for (i = 0; i < 7; i++) {
+			banner[i] = "../images/pic" + (i + 1) + ".jpg";
+
+			document.write("<img src = '" + banner[i] + "' width='100'> ");
+		}
+
+		var n = Math.ceil(Math.random() * 7) - 1;
+
+		document.write("<center><h3>");
+		document.write("<hr><p><img src = '" + banner[n] + "'><br>");
+		document.write("</h3></center>");
+	</script>
+
+	<hr>
+	<div id="abc"></div>
+
+	<script>
+		function aa() {
+			var n = Math.ceil(Math.random() * 7) - 1;	// 0 ~ 6
+			document.getElementById('abc').innerHTML = "<center><img src='" + banner[n] + "'></center>";
+		}
+		setInterval("aa()", 3000);
+		aa();  // 처음 실행시 3초간으 ㅣ공백이 지속되는 현상을 해경하기 위해 곧바로 함수 aa()를 실행 또는 <body>문에 onload="aa()"를 추가하면 3초간의 빈 공백이 지속되는 현상을 해결하게 됨.	
+	</script>
+</body>
+
+</html>
