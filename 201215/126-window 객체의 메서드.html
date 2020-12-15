@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> BOM(Browser Object Model)-window의 메서드 </title>
+</head>
+
+<body>
+	<script>
+		function test() {
+			moveTo(100, 100);
+		}
+
+		function test2() {
+			moveBy(10, 10);
+		}
+
+		function test3() {
+			resizeTo(300, 400); // 300, 400 사이즈
+		}
+
+		function test4() {
+			resizeBy(200, 300);  // 500, 700 사이즈
+		}
+	</script>
+	<input type="button" value="moveTo" onclick="test()" />
+	<input type="button" value="moveBy" onclick="test2()" />
+	<input type="button" value="resizeTo" onclick="test3()" />
+	<input type="button" value="resizeBy" onclick="test4()" />
+	<!-- 
+				---- 결과 ----
+				IE를 제외한 대부분의 브라우저는 보안상의 이유로 메인 브라우저(부모 브라우저)의 이동과 크기 조절을 금지한다.
+		-->
+	<!--
+		
+  메서드                                     설명
+closed() --------------------	현재 윈도우를 닫는다.
+blur() -----------------------	현재 윈도우의 포커스를 제거한다.
+focus() ---------------------	현재 윈도우에 포커스를 준다.
+resizeTo(width, height) ----	윈도우의 크기를 변경한다.
+resizeBy(width, height) ----	현재 크기에서 width, height만큼 늘어난 상대적인 크기로 조정한다.
+moveTo(x, y) ---------------	윈도우를 x, y 위치로 옮긴다.
+moveBy(x, y) ---------------	윈도우를 현재 위치에서 x, y만큼 이동한 상대적인 위치로 옮긴다.
+scrollTo(xpos, ypos) -------	xpos, ypos 위치로 스크롤한다. 스크롤 바가 보일때만 동작한다.
+scrollBy(xnum, ynum) -----	현재 위치에서 xnum, ynum만큼 상대적인 위치로 스크롤한다. 스크롤 바가 보일때만 동작한다.
+print() -----------------------	윈도의 내용물을 프린터로 인쇄한다. 인쇄 대화상자가 나타난다.
+
+이름 뒤에 To가 붙은 메서드 : 절대적인 값을 사용
+By                     : 현재값에서 상대적인 값을 사용
+				    
+-->
+</body>
+
+</html>

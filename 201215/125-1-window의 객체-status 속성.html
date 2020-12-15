@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> BOM(Browser Object Model)-window-status 속성 </title>
+
+</head>
+
+<body>
+	<img src="images/leaf.jpg" onmouseover="mover1( )"> <img src="images/fox.png" onmouseover="mover2( )">
+	<script>
+		function mover1() {
+			window.status = "나뭇잎 그림을 선택하셨네요."
+		}
+
+		function mover2() {
+			window.status = " 여우 그림을 선택하셨네요."
+		}
+	</script>
+</body>
+
+</html>
