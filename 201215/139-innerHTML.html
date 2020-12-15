@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        HTML 내용 변경
+        innerHTML의 속성을 이요하여 HTML 요소의 내용을 수정, 출력할 수 있습니다.
+        document.getElementById(id).innerHTML = 새로운 HTML 내용;
+    -->
+    <p id="p1">Hello World!</p>
+    <div id="demo">123</div>
+
+    <script>
+        var myElement = document.getElementById("p1");
+        document.getElementById("demo").innerHTML = myElement.innerHTML;
+        document.getElementById("p1").innerHTML = "<h1>잘 모르겠지만 바뀌었어요..</h1>";
+        // documnet.getElementById("p1").innetHTML = "<h1>잘 모르겠지만 바뀌었어요..</h1>";
+    </script>
+</body>
+
+</html>
